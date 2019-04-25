@@ -1,0 +1,19 @@
+{
+  "name": "server_my_rute",
+  "version": "1.0.0",
+  "description": "servidor de my_route",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "author": "Ing.Steben Aragon Vera",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.3",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}

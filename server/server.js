@@ -21,7 +21,7 @@ app.use(require('./routes/index')) // Archivo que tiene todas las rutas
 
 
 // conexion con la bd
-mongoose.connect('mongodb://localhost:27017/my_rute', {useNewUrlParser: true,useCreateIndex:true},(err,res)=>{
+mongoose.connect(process.env.URLDB, {useNewUrlParser: true,useCreateIndex:true},(err,res)=>{
     if(err){
         throw new Error('No se pudo realizar la conexion con la bd')
     }

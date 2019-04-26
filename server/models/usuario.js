@@ -40,5 +40,5 @@ usuariosShema.methods.toJSON = function(){
     return userObject
 }
 
-usuariosShema.plugin(uniqueValidator, { message: 'Error, el {PATH} debe ser unico' });
+usuariosShema.plugin(uniqueValidator, { message: 'Error, este {PATH} correo ya esta siendo usado' });
 module.exports = mongoose.model('Usuario',usuariosShema)

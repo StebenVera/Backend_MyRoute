@@ -39,7 +39,7 @@ app.post('/usuario',(req,res)=>{
                 if(err){
                    return res.status(400).json({
                             estado:0,
-                            err:err.errors.correo.message
+                            mensaje:err.errors.correo.message
                         })
                     }
                 res.json({

@@ -18,7 +18,17 @@ let viajesShema = new Shema({
     nombreConductor:{
         type:String,
         required:[true,'El nombre del conductor es necesario']
+    },
+    distancia:{
+        type:String
+    },
+    tiempo:{
+        type:String
+    },
+    tarifa:{
+        type:String
     }
+
 })
 
 module.exports = mongoose.model('Viaje',viajesShema)

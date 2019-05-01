@@ -16,7 +16,8 @@ app.get('/viaje',(req,res)=>{
             res.json({
                 estado:1,
                 usuarioDb,
-                contador
+                contador,
+                mensaje:"Viaje asignado Correctamente"
             })
         })
         

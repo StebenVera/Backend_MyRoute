@@ -30,7 +30,10 @@ let viajesShema = new Shema({
     tarifa:{
         type:String,
         required:[true,'La tarifa es necesaria']
-
+    },
+    placa:{
+        type:String,
+        required:[true,'La placa es necesaria']
     }
 
 })

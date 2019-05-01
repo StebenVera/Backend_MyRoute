@@ -32,7 +32,8 @@ app.post('/viaje',(req,res)=>{
         nombreConductor:body.nombreConductor,
         distancia: body.distancia,
         tiempo: body.tiempo,
-        tarifa: body.tarifa
+        tarifa: body.tarifa,
+        placa: body.placa
     })
     try{
         viaje.save((error,usuarioDB)=>{

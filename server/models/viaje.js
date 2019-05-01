@@ -34,6 +34,10 @@ let viajesShema = new Shema({
     placa:{
         type:String,
         required:[true,'La placa es necesaria']
+    },
+    destino:{
+        type:String,
+        required:[true,'El destino es necesario']
     }
 
 })

@@ -3,7 +3,7 @@ const app = express ()
 const Viaje = require('../models/viaje')
 
 
-app.get('/viaje',(req,res)=>{
+app.post('/viajeRegistro',(req,res)=>{
     let body = req.body
     Viaje.find({nombre:body.nombre},(err,usuarioDb)=>{
         if(err){

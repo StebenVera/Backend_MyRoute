@@ -20,13 +20,17 @@ let viajesShema = new Shema({
         required:[true,'El nombre del conductor es necesario']
     },
     distancia:{
-        type:String
+        type:String,
+        required:[true,'La distancia es necesaria']
     },
     tiempo:{
-        type:String
+        type:String,
+        required:[true,'El tiempo es necesario']
     },
     tarifa:{
-        type:String
+        type:String,
+        required:[true,'La tarifa es necesaria']
+
     }
 
 })
